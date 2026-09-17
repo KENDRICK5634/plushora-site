@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlusHora Bedding | Premium Bedding Consulting & Sourcing Solutions</title>
+  <meta name="description" content="Expert bedding consultation, luxury fabric sourcing, and OEM/B2B customized solutions for retailers, hotels, and designers.">
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #926a4b;
+      --accent-hover: #7b573c;
+      --bg: #fdfbf7;
+      --card-bg: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(253, 251, 247, 0.95);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .logo span {
+      color: var(--accent);
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .btn-cta {
+      background-color: var(--accent);
+      color: #fff !important;
+      padding: 9px 18px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .btn-cta:hover {
+      background-color: var(--accent-hover);
+    }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 90px 24px 70px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #f0e6dc;
+      color: var(--accent-hover);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+    .btn-large {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-large:hover {
+      background: #0f172a;
+      transform: translateY(-2px);
+    }
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .section-title p {
+      color: var(--text-light);
+      font-size: 1rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+    .about-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .about-text h3 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .about-text p {
+      color: var(--text-light);
+      margin-bottom: 14px;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px;
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,0.04);
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: #fafafa;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: #fff;
+    }
+    .btn-submit {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover {
+      background: var(--accent-hover);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background: #fff;
+      padding: 36px 24px;
+      text-align: center;
+      color: var(--text-light);
+      font-size: 0.88rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .about-box { grid-template-columns: 1fr; padding: 28px; }
+      nav a:not(.btn-cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">PlusHora<span>Bedding</span></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact" class="btn-cta">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">B2B & Commercial Bedding Advisory</div>
+    <h1>Elevate Your Bedding Business With Expert Sourcing & Strategy</h1>
+    <p>We provide end-to-end consulting services for hospitality brands, boutique retailers, and e-commerce labels—covering fabric grading, supply chain verification, and custom product development.</p>
+    <a href="#contact" class="btn-large">Schedule a Discovery Call</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="section-title">
+      <h2>Our Core Consulting Services</h2>
+      <p>Tailored solutions designed to reduce procurement risks and maximize comfort quality.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">🪡</div>
+        <h3>Fabric & Material Sourcing</h3>
+        <p>Comprehensive guidance on Egyptian cotton, Mulberry silk, bamboo fibers, and thread counts to match your market price point and luxury tier.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>Supply Chain Auditing</h3>
+        <p>Factory credential reviews, OEKO-TEX / GOTS certification verification, and quality-control standards to secure reliable production.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3>Custom OEM / Private Label</h3>
+        <p>From initial design specs and sample vetting to custom packaging solutions ready for the North American retail market.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="about-box">
+      <div class="about-text">
+        <h3>Why Work With PlusHora?</h3>
+        <p>Navigating the global textile ecosystem requires technical knowledge and clear industry foresight. At <strong>plushorabedding.com</strong>, we bridge the gap between textile manufacturers and US-based business operators.</p>
+        <p>Whether you are launching an exclusive direct-to-consumer bedding line or outfitting a boutique hotel group, our independent advisory guarantees cost transparency and premium sleep performance.</p>
+      </div>
+      <div style="background: #f8fafc; border-radius: 8px; padding: 24px; border-left: 4px solid var(--accent);">
+        <h4 style="color: var(--primary); margin-bottom: 8px;">Direct Advisory Scope:</h4>
+        <ul style="list-style-position: inside; color: var(--text-light); line-height: 1.8;">
+          <li>B2B Wholesale Strategy</li>
+          <li>Textile Testing & Spec Sheets</li>
+          <li>US Market Packaging & Compliance</li>
+          <li>Post-launch Inventory Planning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section" id="contact">
+    <div class="section-title">
+      <h2>Get in Touch</h2>
+      <p>Tell us about your project requirements and receive a response within 1 business day.</p>
+    </div>
+    <div class="contact-container">
+      <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been received. We will be in touch soon.');">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. Alex Morgan" required>
+        </div>
+        <div class="form-group">
+          <label>Business Email</label>
+          <input type="email" placeholder="alex@company.com" required>
+        </div>
+        <div class="form-group">
+          <label>Consultation Focus</label>
+          <select>
+            <option>Textile & Fabric Sourcing</option>
+            <option>Private Label / OEM Development</option>
+            <option>Hospitality & Hotel Bulk Procurement</option>
+            <option>Other Advisory Services</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea rows="4" placeholder="Briefly describe your goals, timeline, or volume requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 plushorabedding.com. All rights reserved. | Professional Bedding Consulting & Advisory.</p>
+  </footer>
+
+</body>
+</html>
