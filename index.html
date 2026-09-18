@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   <title>PlusHora Bedding | Premium Bedding Consulting & Sourcing Solutions</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e293b'/><text y='68' x='50' font-size='60' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23ffffff'>P</text></svg>">
   <meta name="description" content="Expert bedding consultation, luxury fabric sourcing, and OEM/B2B customized solutions for retailers, hotels, and designers.">
@@ -264,7 +265,20 @@
       </nav>
     </div>
   </header>
-
+<!-- 3D 动态模型展示区开始 -->
+<div style="max-width: 800px; margin: 40px auto; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center;">
+  <h3 style="color: #0f172a; margin-bottom: 8px;">Interactive 3D Preview</h3>
+  <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px;">Click and drag with your mouse to rotate 360°</p>
+  
+  <model-viewer 
+    src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+    alt="3D Interactive Model" 
+    auto-rotate 
+    camera-controls 
+    style="width: 100%; height: 400px; background-color: #f8fafc; border-radius: 8px;">
+  </model-viewer>
+</div>
+<!-- 3D 动态模型展示区结束 -->
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-badge">B2B & Commercial Bedding Advisory</div>
